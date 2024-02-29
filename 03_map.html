@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+
+    <script>
+   // The JavaScript map() method is used to create a new array by calling a specific function on each element present in the parent array. It is a non-mutating method which means that it does not change the original array.
+
+   // The map() method is often used to apply some changes to the elements, whether multiplying by a specific number or doing any other operations that you might require for your application.
+
+
+
+
+
+
+   var numbers=[1,2,3,4,5];
+
+//    var sqrt=numbers.map(Math.sqrt);  or
+let sqrt=numbers.map((value)=>{
+    //  console.log(Math.sqrt(value));  or
+    return (Math.sqrt(value)); 
+})
+   console.log(sqrt);
+//---------------------------------------------------
+
+   const numbers_tow = [1, 2, 3, 4, 5];
+
+const doubledNumbers = numbers.map(number => numbers_tow * 2);
+
+console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+
+//---------------------------------------------------
+
+
+var users= [{ full_name:"sathish", age:"8",city:"karur",salary:"25000"},
+          { full_name:"nisanth", age:"21",city:"karur",salary:"40000"},
+          { full_name:"guru", age:"11",city:"karur",salary:"60000"}
+        ];
+
+
+var eligible_status=users.map(temporaryvalue=>{
+    console.table(temporaryvalue.age>=18?"eligible":"not eligible");
+
+});
+    </script>
+
+
+</body>
+</html>

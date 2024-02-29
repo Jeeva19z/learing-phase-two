@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+
+    <script>
+        // foreach to get the value from the array without using for and while loops. it much simplify.
+       let numbers=[1,2,3,4,5,6,7,8,9,10];
+    
+       numbers.forEach((value,index)=> {console.log("index : " +  index + " value : "+ value )});
+
+        // or 
+    
+        // for(var i=0; i<=9;i++){
+        //     var result=numbers[i];
+        //     console.log(result);
+        // }
+
+        // by get the value form the complex array 
+
+        var users= [
+            {
+                full_name:"jeeva",
+                age:"22",
+                city:"chennai",
+                salary:"12000",
+
+            },
+
+            {
+                full_name:"karthi",
+                age:"12",
+                city:"karur",
+                salary:"20000"
+
+            },
+            {
+                full_name:"guru",
+                age:"18",
+                city:"karur",
+                salary:"20000"
+
+            },
+ { full_name:"sathish", age:"18",city:"karur",salary:"20000"},{ full_name:"nisanth", age:"18",city:"karur",salary:"20000"}
+
+
+        ];
+
+
+       users.forEach((value) =>{
+       console.log(value.full_name) });
+
+
+
+    </script>
+
+
+</body>
+</html>
